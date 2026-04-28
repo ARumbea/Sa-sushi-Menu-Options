@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SA Sushi | Fresh Sushi Catering & Delivery</title>
+    <meta
+      name="description"
+      content="SA Sushi demo website with menu highlights, gallery, and contact details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">SA <span>SUSHI</span></div>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-small">Order Now</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Fresh • Elegant • Handmade</p>
+          <h1>Green, Gold & Flavorful Sushi Experiences</h1>
+          <p>
+            A boutique sushi brand blending premium presentation with house-made sauces,
+            creative rolls, and signature joes.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn">View Menu</a>
+            <a href="#contact" class="btn btn-ghost">Book Catering</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Brand Direction</h3>
+          <ul>
+            <li><span></span>Deep Forest #2D4A22</li>
+            <li><span></span>Dark Sage #4A6741</li>
+            <li><span></span>Olive Green #556B2F</li>
+            <li><span></span>Gold Accent #D0A94C</li>
+            <li><span></span>Cream #F0EEE2</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="menu" class="section">
+        <h2>Menu Highlights</h2>
+        <p class="section-sub">A sample of your best-selling categories and fan favorites.</p>
+        <div class="grid menu-grid">
+          <article class="card">
+            <h3>Entradas</h3>
+            <p><strong>Gyoza</strong> — 8 units, pork & vegetables <span>$12</span></p>
+            <p><strong>Mix de Cogumelos</strong> — shimeji, butter, special sauce <span>$10</span></p>
+          </article>
+          <article class="card">
+            <h3>Nigiri</h3>
+            <p><strong>Dupla Salmão</strong> <span>$7</span></p>
+            <p><strong>Dupla Salmão Trufado</strong> <span>$9</span></p>
+            <p><strong>Dupla Salmão Especial</strong> <span>$9</span></p>
+          </article>
+          <article class="card">
+            <h3>Joes</h3>
+            <p><strong>Joe Salmão</strong> <span>$12</span></p>
+            <p><strong>Joe Camarão</strong> <span>$13</span></p>
+            <p><strong>Joe Crispy</strong> <span>$11</span></p>
+          </article>
+          <article class="card highlight">
+            <p class="badge">Destaque</p>
+            <h3>Fried Temaki</h3>
+            <p>Signature high-sale item with salmon and cream cheese.</p>
+            <p class="price">$17</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <h2>Visual Gallery</h2>
+        <p class="section-sub">Use these blocks as placeholders for your real food photography.</p>
+        <div class="grid gallery-grid" id="galleryGrid"></div>
+      </section>
+
+      <section id="about" class="section split">
+        <div>
+          <h2>About SA Sushi</h2>
+          <p>
+            SA Sushi is built around premium ingredients, artistic plating, and warm service.
+            Your brand style blends deep green palettes, gold accents, and elegant typography.
+          </p>
+          <p>
+            This demo is ready to customize with your final menu, online ordering link,
+            opening hours, and social media content.
+          </p>
+        </div>
+        <div class="team-card">
+          <h3>Team Focus</h3>
+          <ul>
+            <li>Private events & catering trays</li>
+            <li>Signature rolls and chef specials</li>
+            <li>Premium visual presentation</li>
+            <li>Friendly, community-first service</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Ready to Order?</h2>
+        <p>Call, DM, or send a message to book your sushi experience.</p>
+        <form class="contact-form" onsubmit="return false">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Tell us what you're planning..."></textarea>
+          <button class="btn" type="submit">Send Request</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> SA Sushi — Demo site created for brand preview.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
