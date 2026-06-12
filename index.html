@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SA Sushi | Handcrafted Sushi & Premium Catering</title>
+    <meta name="description" content="SA Sushi — premium handcrafted sushi rolls, nigiri, temaki, and catering. Fresh ingredients, artistic presentation, and flavors you won't forget." />
+    <meta property="og:title" content="SA Sushi | Handcrafted Sushi & Premium Catering" />
+    <meta property="og:description" content="Premium sushi rolls, nigiri, temaki, and catering. Book your sushi experience today." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- ── TOP BAR ── -->
+    <header class="topbar" id="topbar">
+      <a href="#" class="logo">SA <span>SUSHI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#promos">Offers</a>
+        <a href="#catering">Catering</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-sm">Order Now</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Toggle menu">&#9776;</button>
+    </header>
+
+    <main>
+
+      <!-- ── HERO ── -->
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-blur c1"></div>
+          <div class="hero-blur c2"></div>
+        </div>
+        <div class="hero-inner container">
+          <p class="eyebrow">Fresh &bull; Handcrafted &bull; Unforgettable</p>
+          <h1>Every Roll Tells<br /><em>a Story</em></h1>
+          <p class="hero-sub">SA Sushi brings premium ingredients, artistic plating, and bold house-made sauces to every plate — from intimate dinners to grand catering events.</p>
+          <div class="hero-cta">
+            <a href="#menu" class="btn">Explore Menu</a>
+            <a href="#catering" class="btn btn-ghost">Book Catering</a>
+          </div>
+        </div>
+        <div class="hero-badges container">
+          <div class="badge-pill"><span class="dot forest"></span> Deep Forest</div>
+          <div class="badge-pill"><span class="dot gold"></span> Gold Accent</div>
+          <div class="badge-pill"><span class="dot cream"></span> Cream & Elegance</div>
+        </div>
+      </section>
+
+      <!-- ── STATS STRIP ── -->
+      <div class="stats-strip">
+        <div class="container stats-inner">
+          <div class="stat"><strong id="stat-rolls">50+</strong><span>Signature Rolls</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong>100%</strong><span>Fresh Daily</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong id="stat-events">200+</strong><span>Events Catered</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong>5★</strong><span>Customer Rating</span></div>
+        </div>
+      </div>
+
+      <!-- ── MENU ── -->
+      <section id="menu" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Our Offering</p>
+            <h2>Full Menu</h2>
+            <p class="section-sub">Premium ingredients, creative combinations, and house-made sauces in every bite.</p>
+          </div>
+
+          <div class="menu-tabs" id="menuTabs" role="tablist">
+            <button class="tab active" data-tab="entradas" role="tab" aria-selected="true">Entradas</button>
+            <button class="tab" data-tab="nigiri" role="tab" aria-selected="false">Nigiri</button>
+            <button class="tab" data-tab="rolls" role="tab" aria-selected="false">Rolls</button>
+            <button class="tab" data-tab="joes" role="tab" aria-selected="false">Joes</button>
+            <button class="tab" data-tab="temaki" role="tab" aria-selected="false">Temaki</button>
+            <button class="tab" data-tab="combos" role="tab" aria-selected="false">Combos</button>
+          </div>
+
+          <div class="menu-panels">
+            <!-- Entradas -->
+            <div class="menu-panel active" id="tab-entradas">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Gyoza</h4>
+                    <p>8 units — pork &amp; vegetables, pan-fried with dipping sauce</p>
+                  </div>
+                  <span class="mi-price">$12</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Mix de Cogumelos</h4>
+                    <p>Shimeji, shiitake &amp; oyster mushrooms, garlic butter &amp; house sauce</p>
+                  </div>
+                  <span class="mi-price">$10</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Edamame</h4>
+                    <p>Steamed salted soybeans — light &amp; refreshing starter</p>
+                  </div>
+                  <span class="mi-price">$7</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Miso Soup</h4>
+                    <p>Traditional dashi broth with tofu, wakame &amp; spring onion</p>
+                  </div>
+                  <span class="mi-price">$5</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Nigiri -->
+            <div class="menu-panel" id="tab-nigiri">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Dupla Salmão</h4>
+                    <p>2 pieces — classic salmon nigiri on seasoned rice</p>
+                  </div>
+                  <span class="mi-price">$7</span>
+                </div>
+                <div class="menu-item featured">
+                  <span class="feat-badge">Popular</span>
+                  <div class="mi-info">
+                    <h4>Dupla Salmão Trufado</h4>
+                    <p>2 pieces — salmon with truffle oil &amp; gold leaf finish</p>
+                  </div>
+                  <span class="mi-price">$9</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Dupla Salmão Especial</h4>
+                    <p>2 pieces — salmon with house spicy mayo &amp; crispy shallots</p>
+                  </div>
+                  <span class="mi-price">$9</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Dupla Atum</h4>
+                    <p>2 pieces — premium yellowfin tuna with wasabi &amp; ginger</p>
+                  </div>
+                  <span class="mi-price">$8</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Dupla Camarão</h4>
+                    <p>2 pieces — poached tiger prawn with citrus glaze</p>
+                  </div>
+                  <span class="mi-price">$9</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Nigiri Mix (8 pcs)</h4>
+                    <p>Chef's selection — 4 varieties of premium nigiri</p>
+                  </div>
+                  <span class="mi-price">$28</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rolls -->
+            <div class="menu-panel" id="tab-rolls">
+              <div class="menu-grid">
+                <div class="menu-item featured">
+                  <span class="feat-badge">Chef's Pick</span>
+                  <div class="mi-info">
+                    <h4>Green Dragon Roll</h4>
+                    <p>Salmon, cream cheese, avocado topped with thinly sliced cucumber &amp; gold sauce</p>
+                  </div>
+                  <span class="mi-price">$18</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Spicy Tuna Crunch</h4>
+                    <p>Tuna, jalapeño, cucumber, crispy tempura flakes &amp; sriracha mayo</p>
+                  </div>
+                  <span class="mi-price">$16</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Salmon Gold Roll</h4>
+                    <p>Salmon, cream cheese, mango topped with torched salmon &amp; gold sauce</p>
+                  </div>
+                  <span class="mi-price">$17</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Forest Roll</h4>
+                    <p>Shrimp, avocado &amp; cucumber wrapped in soy paper with herb oil</p>
+                  </div>
+                  <span class="mi-price">$15</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Crispy Shrimp Tempura</h4>
+                    <p>Battered tiger shrimp, lettuce, spicy aioli &amp; sesame</p>
+                  </div>
+                  <span class="mi-price">$16</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>California Deluxe</h4>
+                    <p>Imitation crab, cucumber, avocado topped with masago &amp; sesame</p>
+                  </div>
+                  <span class="mi-price">$13</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Joes -->
+            <div class="menu-panel" id="tab-joes">
+              <div class="menu-grid">
+                <div class="menu-item featured">
+                  <span class="feat-badge">Best Seller</span>
+                  <div class="mi-info">
+                    <h4>Joe Salmão</h4>
+                    <p>Salmon, cream cheese &amp; crunchy tempura in a house-special sauce</p>
+                  </div>
+                  <span class="mi-price">$12</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Joe Camarão</h4>
+                    <p>Tiger shrimp, avocado, cucumber with zesty citrus glaze</p>
+                  </div>
+                  <span class="mi-price">$13</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Joe Crispy</h4>
+                    <p>Crispy fried chicken, coleslaw &amp; spicy mayo — a crowd favourite</p>
+                  </div>
+                  <span class="mi-price">$11</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Joe Atum</h4>
+                    <p>Premium tuna, jalapeño, mango salsa &amp; sriracha drizzle</p>
+                  </div>
+                  <span class="mi-price">$13</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Temaki -->
+            <div class="menu-panel" id="tab-temaki">
+              <div class="menu-grid">
+                <div class="menu-item featured">
+                  <span class="feat-badge">Signature</span>
+                  <div class="mi-info">
+                    <h4>Fried Temaki Salmão</h4>
+                    <p>Our highest-selling item — crispy fried cone with salmon &amp; cream cheese</p>
+                  </div>
+                  <span class="mi-price">$17</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Temaki Salmão Clássico</h4>
+                    <p>Hand-rolled nori cone with salmon, avocado &amp; rice</p>
+                  </div>
+                  <span class="mi-price">$12</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Temaki Camarão Crispy</h4>
+                    <p>Crispy tiger shrimp, kewpie mayo &amp; fresh herbs in toasted nori</p>
+                  </div>
+                  <span class="mi-price">$14</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Temaki Vegano</h4>
+                    <p>Seasonal vegetables, seasoned tofu &amp; ginger dressing</p>
+                  </div>
+                  <span class="mi-price">$10</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Combos -->
+            <div class="menu-panel" id="tab-combos">
+              <div class="menu-grid">
+                <div class="menu-item featured">
+                  <span class="feat-badge">Value</span>
+                  <div class="mi-info">
+                    <h4>Combo Duo</h4>
+                    <p>2 rolls of your choice + miso soup + edamame — perfect for two</p>
+                  </div>
+                  <span class="mi-price">$38</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Salmão Experience</h4>
+                    <p>Salmon nigiri dupla × 2, salmon gold roll &amp; fried temaki salmão</p>
+                  </div>
+                  <span class="mi-price">$42</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Party Platter (for 4)</h4>
+                    <p>Chef's selection: 4 rolls, 8 pieces nigiri, 4 temaki &amp; edamame</p>
+                  </div>
+                  <span class="mi-price">$85</span>
+                </div>
+                <div class="menu-item">
+                  <div class="mi-info">
+                    <h4>Omakase Tasting Box</h4>
+                    <p>Chef's 10-piece selection — surprise assortment of our best that day</p>
+                  </div>
+                  <span class="mi-price">$55</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PROMOTIONS ── -->
+      <section id="promos" class="section promos-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Limited Offers</p>
+            <h2>This Week's Deals</h2>
+          </div>
+          <div class="promos-grid">
+            <div class="promo-card promo-large">
+              <div class="promo-tag">Happy Hour</div>
+              <h3>15% Off All Rolls</h3>
+              <p>Monday – Friday, 12 PM – 3 PM. Perfect for a premium lunch break.</p>
+              <a href="#contact" class="btn btn-sm">Order Now</a>
+            </div>
+            <div class="promo-card">
+              <div class="promo-tag">Weekend Special</div>
+              <h3>Party Platter Deal</h3>
+              <p>Book a party platter for 4+ people on weekends and get complimentary edamame &amp; miso.</p>
+              <a href="#contact" class="btn btn-sm btn-ghost">Book Table</a>
+            </div>
+            <div class="promo-card">
+              <div class="promo-tag">Catering</div>
+              <h3>Event Package</h3>
+              <p>Corporate or private events of 20+ guests — receive 10% off your total catering order.</p>
+              <a href="#catering" class="btn btn-sm btn-ghost">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CATERING ── -->
+      <section id="catering" class="section catering-section">
+        <div class="container">
+          <div class="catering-grid">
+            <div class="catering-copy">
+              <p class="eyebrow">Private &amp; Corporate</p>
+              <h2>Sushi Catering That Wows</h2>
+              <p>SA Sushi transforms any event into an extraordinary culinary experience. From intimate birthday dinners to large corporate galas, our team delivers precision, freshness, and flair.</p>
+              <ul class="catering-list">
+                <li><span class="check">&#10003;</span> Customised menus tailored to your guests</li>
+                <li><span class="check">&#10003;</span> Live sushi station available for events</li>
+                <li><span class="check">&#10003;</span> Sustainable packaging &amp; eco trays</li>
+                <li><span class="check">&#10003;</span> Minimum 10 guests — maximum flavour</li>
+                <li><span class="check">&#10003;</span> Full setup &amp; service team included</li>
+              </ul>
+              <a href="#contact" class="btn">Request a Quote</a>
+            </div>
+            <div class="catering-packages">
+              <div class="pkg-card">
+                <h4>Starter Package</h4>
+                <p class="pkg-size">10 – 20 guests</p>
+                <ul>
+                  <li>3 roll varieties</li>
+                  <li>Nigiri selection</li>
+                  <li>Edamame &amp; miso</li>
+                </ul>
+                <p class="pkg-from">From <strong>$18 / person</strong></p>
+              </div>
+              <div class="pkg-card pkg-featured">
+                <p class="pkg-badge">Most Popular</p>
+                <h4>Premium Package</h4>
+                <p class="pkg-size">20 – 50 guests</p>
+                <ul>
+                  <li>5 roll varieties</li>
+                  <li>Nigiri &amp; sashimi mix</li>
+                  <li>Temaki station</li>
+                  <li>Full starter selection</li>
+                </ul>
+                <p class="pkg-from">From <strong>$25 / person</strong></p>
+              </div>
+              <div class="pkg-card">
+                <h4>Grand Package</h4>
+                <p class="pkg-size">50+ guests</p>
+                <ul>
+                  <li>Full menu access</li>
+                  <li>Live sushi station</li>
+                  <li>Dedicated chef</li>
+                  <li>Custom branding options</li>
+                </ul>
+                <p class="pkg-from">From <strong>$35 / person</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── TESTIMONIALS ── -->
+      <section class="section testimonials-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">What People Say</p>
+            <h2>Our Guests Love Us</h2>
+          </div>
+          <div class="testimonials-carousel" id="testimonialCarousel">
+            <div class="t-slide active">
+              <blockquote>"The Fried Temaki Salmão is absolutely incredible — I've never tasted anything like it. SA Sushi is on a completely different level."</blockquote>
+              <cite>— Maria L., São Paulo</cite>
+            </div>
+            <div class="t-slide">
+              <blockquote>"We booked SA Sushi for our company event of 60 people. Flawless execution, stunning presentation, and every single guest raved about the food."</blockquote>
+              <cite>— Carlos M., Corporate Client</cite>
+            </div>
+            <div class="t-slide">
+              <blockquote>"The Green Dragon Roll is a work of art. The attention to detail in every piece shows true passion and craftsmanship."</blockquote>
+              <cite>— Juliana R., Food Blogger</cite>
+            </div>
+            <div class="t-slide">
+              <blockquote>"Best sushi in town, full stop. The Party Platter is incredible value and my friends are already planning our next visit."</blockquote>
+              <cite>— André T., Regular Customer</cite>
+            </div>
+          </div>
+          <div class="t-controls">
+            <button class="t-btn" id="tPrev" aria-label="Previous">&#8592;</button>
+            <div class="t-dots" id="tDots"></div>
+            <button class="t-btn" id="tNext" aria-label="Next">&#8594;</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── GALLERY ── -->
+      <section id="gallery" class="section gallery-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Visual Story</p>
+            <h2>Gallery</h2>
+            <p class="section-sub">A peek at our artistry — every plate, a masterpiece.</p>
+          </div>
+          <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+      </section>
+
+      <!-- ── ABOUT ── -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-copy">
+              <p class="eyebrow">Our Story</p>
+              <h2>Born from Passion,<br />Plated with Purpose</h2>
+              <p>SA Sushi started as a dream to bring authentic Japanese flavours with a vibrant, modern twist. Every roll, every sauce, every garnish is crafted by hand with premium ingredients sourced fresh each morning.</p>
+              <p>We believe sushi is more than a meal — it's a moment. Whether you're treating yourself or hosting a celebration, we're here to make it unforgettable.</p>
+            </div>
+            <div class="values-grid">
+              <div class="value-card">
+                <div class="value-icon">&#127809;</div>
+                <h4>Fresh Daily</h4>
+                <p>Ingredients sourced every morning — no compromises.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon">&#127775;</div>
+                <h4>Artisan Quality</h4>
+                <p>Every roll is hand-crafted by skilled sushi chefs.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon">&#127775;</div>
+                <h4>House Sauces</h4>
+                <p>Our signature sauces are made fresh in-house daily.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon">&#127968;</div>
+                <h4>Community First</h4>
+                <p>Rooted in our neighbourhood, feeding the community.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CONTACT ── -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-copy">
+              <p class="eyebrow">Get in Touch</p>
+              <h2>Ready for an Unforgettable Sushi Experience?</h2>
+              <p>Whether you want to place an order, book a catering event, or just say hello — we'd love to hear from you.</p>
+              <div class="contact-info">
+                <div class="ci-item">
+                  <span class="ci-icon">&#128205;</span>
+                  <span>Available for delivery &amp; catering across the region</span>
+                </div>
+                <div class="ci-item">
+                  <span class="ci-icon">&#128337;</span>
+                  <span>Mon – Sun, 11 AM – 10 PM</span>
+                </div>
+                <div class="ci-item">
+                  <span class="ci-icon">&#128241;</span>
+                  <span>DM us on Instagram for fastest response</span>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram">&#128248; Instagram</a>
+                <a href="#" class="social-btn" aria-label="WhatsApp">&#128172; WhatsApp</a>
+                <a href="#" class="social-btn" aria-label="Facebook">&#128101; Facebook</a>
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="femail">Email</label>
+                  <input type="email" id="femail" name="email" placeholder="you@example.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="ftype">Request Type</label>
+                <select id="ftype" name="type">
+                  <option value="">Select an option</option>
+                  <option value="order">Regular Order</option>
+                  <option value="catering">Catering Event</option>
+                  <option value="inquiry">General Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="fmsg">Message</label>
+                <textarea id="fmsg" name="message" placeholder="Tell us what you're planning, how many guests, dietary requirements..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-full" id="submitBtn">Send Request</button>
+              <p class="form-success" id="formSuccess">&#10003; Your request has been sent! We'll be in touch soon.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="logo">SA <span>SUSHI</span></div>
+          <p>Premium sushi. Extraordinary experiences.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <a href="#menu">Menu</a>
+          <a href="#promos">Offers</a>
+          <a href="#catering">Catering</a>
+          <a href="#about">About</a>
+        </div>
+        <div class="footer-links">
+          <h5>Contact</h5>
+          <a href="#contact">Send a Message</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+        <div class="footer-newsletter">
+          <h5>Stay Updated</h5>
+          <p>New rolls, deals &amp; events — straight to your inbox.</p>
+          <form class="nl-form" id="nlForm" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email for newsletter" required />
+            <button type="submit" class="btn btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> SA Sushi &mdash; All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
